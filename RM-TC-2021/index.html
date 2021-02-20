@@ -13,20 +13,12 @@
   </head>
 
   <body>
-    <model-viewer id="model-viewer" src="https://cdn.jsdelivr.net/gh/iChizer0/RM-TC-2021/RM-TC-2021.glb"
-      shadow-intensity="1" camera-controls auto-rotate>
+    <model-viewer id="model-viewer" style="width: 100%; height: 800px;"
+      src="https://cdn.jsdelivr.net/gh/iChizer0/RM-TC-2021/RM-TC-2021.glb" shadow-intensity="1" preload
+      reveal-when-loaded camera-controls auto-rotate>
     </model-viewer>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-    <script>
-      document.onreadystatechange = function () {
-        if ("complete" === document.readyState) {
-          var e = document.getElementById('model-viewer');
-          e.style.width = '100%';
-          e.style.height = '600px';
-        }
-      }
-    </script>
   </body>
 
 </html>
